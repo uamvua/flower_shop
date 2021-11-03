@@ -12,20 +12,22 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="wrapper">
         <header class="header">
-            <div class="container">
+            <div class="container header__container">
                 <div class="header__content">
                     <div class="logo">
                         <a href="#" class="logo__link">
-                            <img src="img/logo.png" alt="Логотип" class="logo__img">
+                            <div class="logo__img-wrap">
+                                <img src="img/logo.png" alt="Логотип" class="logo__img">
+                            </div>
+                            <div class="logo__text-block">
+                                <div class="logo__title">Florist master</div>
+                                <div class="logo__subtitle">Магазин флорариумов</div>
+                            </div>
                         </a>
-                        <div class="logo__text-block">
-                            <div class="logo__title">Florist master</div>
-                            <div class="logo__subtitle">Магазин флорариумов</div>
-                        </div>
                     </div>
-                    <nav class="nav">
+                    <nav class="nav header__nav">
                         <ul class="nav__list">
                             <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
                             <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
@@ -50,11 +52,23 @@
                         <a href="#" class="basket__triangle"></a>
                     </div>
                 </div>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <div class="header__burger-menu">
+                    <nav class="nav nav--burger">
+                        <ul class="nav__list nav__list--burger">
+                            <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </header>
         <main class="main">
             <section class="section hero">
-                <div class="hero__content">
+                <div class="hero__content hero__item">
                     <div class="container">
                         <div class="hero__body">
                             <div class="hero__title">
@@ -73,7 +87,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="hero__img">
+                <div class="hero__img hero__item">
                     <img src="img/hero_img.jpg" alt="" class="hero__pic">
                     <div class="hero__dots">
                         <ul class="hero__dots-list">
@@ -315,37 +329,45 @@
                     </ul>
                 </div>
             </section>
-            <footer class="footer">
-                <div class="logo">
-                    <a href="#" class="logo__link">
-                        <img src="img/logo.png" alt="Логотип" class="logo__img">
-                    </a>
-                    <div class="logo__text-block">
-                        <div class="logo__title">Florist master</div>
-                        <div class="logo__subtitle">Магазин флорариумов</div>
-                    </div>
-                </div>
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
-                    </ul>
-                </nav>
-                <address class="contact">
-                    <a href="tel:+7 654 321 00 00" class="contact__tel">
-                        +7 654 321 00 00
-                    </a>
-                </address>
-                <div class="to-main">
-                    <svg class="to-main__img" width="30" height="18" viewBox="0 0 30 18" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.97072 15.9704L14.9707 2.97046L27.9707 15.9704" stroke="white" stroke-opacity="0.7"
-                            stroke-width="3" />
-                    </svg>
-                </div>
-            </footer>
         </main>
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="footer__content">
+                    <div class="logo">
+                        <a href="#" class="logo__link">
+                            <div class="logo__img-wrap logo__img-wrap--circle">
+                                <img src="img/logo.png" alt="Логотип" class="logo__img">
+                            </div>
+                            <div class="logo__text-block">
+                                <div class="logo__title">Florist master</div>
+                                <div class="logo__subtitle">Магазин флорариумов</div>
+                            </div>
+                        </a>
+                    </div>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <address class="contact">
+                        <a href="tel:+7 654 321 00 00" class="contact__tel">
+                            +7 654 321 00 00
+                        </a>
+                    </address>
+                </div>
+                <div class="to-main">
+                    <a href="#wrapper" class="to-main__link">
+                        <svg class="to-main__img" width="30" height="18" viewBox="0 0 30 18" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.97072 15.9704L14.9707 2.97046L27.9707 15.9704" stroke="white"
+                                stroke-opacity="0.7" stroke-width="3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
